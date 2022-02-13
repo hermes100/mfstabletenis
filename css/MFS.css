@@ -1,7 +1,9 @@
-  /*全体:*/
+/*全体:*/
 
   *{margin:0px;
     padding:0px}
+
+  *{color:red;}  
 
   body{background-image: url(画像/背景2.jpg)}
 
