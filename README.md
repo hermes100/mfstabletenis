@@ -3,7 +3,7 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
-      <link rel="stylesheet" link rel=”stylesheet” href=”MFS.css”/ media="screen and (min-width: 801px)">
+      <link rel="stylesheet" link rel=”stylesheet” href=”https://hermes100.github.io/mfstabletenis/css/MFS.css” media="screen and (min-width: 801px)">
       <link rel="stylesheet" href="MFSphoone.css" media="screen and (max-width: 800px)">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
