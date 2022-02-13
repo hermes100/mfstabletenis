@@ -1,271 +1,284 @@
-* {
-  ボックスサイズ：border-box;
-}
+/*全体:*/
 
-体 {
-  マージン：0;
-  font-family： "ヒラギノカクゴシックProN";
-}
+  *{margin:0px;
+    padding:0px}
 
-a {
-  テキスト装飾：なし;
-}
+  *{color:red:}  
 
-。容器 {
-  幅：100％;
-  パディング：0 15px;
-  マージン：0自動;
-}
+  body{background-image: url(画像/背景2.jpg)}
 
-.top-wrapper {
-  パディング：180px 0 100px 0;
-  背景画像：url（top.png）;
-  背景サイズ：カバー;
-  色：白;
-  text-align：center;
-}
 
-.top-wrapper h1 {
-  不透明度：0.7;
-  フォントサイズ：45px;
-  文字間隔：5px;
-}
+  /*ヘッダー部分*/
 
-.top-wrapper p {
-  不透明度：0.7;
-  フォントサイズ：16px;
-  margin-bottom：40px;
-}
+  header{height:120px;
+         display:flex;
+         width:100%;
+         }
 
-.btn-wrapper {
-  text-align：center;
-}
+         .phoone-box {
+         	display: none;
+         	margin: 0 auto 0 auto;
+         	max-width: 960px;
+          text-align: center;
+          visibility: hidden;
+          height: 0px;
 
-.btn-wrapper p {
-  margin-bottom：20px;
-}
+         }
 
-。サインアップ {
-  背景色：＃239b76;
-}
+         .phoone-box ul{
+         	margin: 0;
+         	padding: 0;
+         	list-style-type: none;
+          height:0px;
+         }
 
-。フェイスブック {
-  背景色：＃3b5998;
-  マージン右：10px;
-}
+         .phoone-box li{
+         	padding: 8px 0 8px 0;
+         	color: #20567d;
+         	border-bottom: 1px solid #ffffff;
+          background-color:rgba(192, 192, 192,0.1);
+         }
 
-。ツイッター {
-  背景色：＃55acee;
-}
+         .phoone-box li a{
+           color:silver;
+         }
 
-.btn {
-  パディング：8px 24px;
-  色：白;
-  表示：インラインブロック;
-  不透明度：0.8;
-  border-radius：4px;
-  text-align：center;
-}
 
-.btn：hover {
-  不透明度：1;
-}
 
-.fa {
-  マージン右：5px;
-}
 
-ヘッダー{
-  高さ：65px;
-  幅：100％;
-  背景色：rgba（34,49,52,0.9）;
-  位置：固定;
-  上：0;
-  z-index：10;
-}
 
-.logo {
-  幅：124px;
-  マージントップ：20px;
-}
 
-.header-left {
-  フロート：左;
-}
 
-.header-right {
-  フロート：右;
-  マージン右：-25px;
-}
+  .inbox1{width:30%;
+          }
 
-.header-right a {
-  行の高さ：65px;
-  パディング：0 25px;
-  色：白;
-  表示ブロック;
-  フロート：左;
-  遷移：すべて0.5秒。
-}
+  .inbox2{width:40%;
+          text-align: center;
+          color:silver;
+          }
 
-.header-right a：hover {
-  背景色：rgba（255,255,255,0.3）;
-}
+  .inbox3{width:30%;
+        }
 
-.lesson-wrapper {
-  高さ：580px;
-  パディング-下：80px;
-  パディング-左：5％;
-  パディング-右：5％;
-  背景色：＃f7f7f7;
-  text-align：center;
-}
+  .menu-zone{width:100%;
+             margin-bottom:50px;
+            }
 
-.heading {
-  パディングトップ：80px;
-  パディング-下：50px;
-  色：＃5f5d60;
-}
+  .menu {display: flex;
+         height: 2rem;
+         margin: 0 auto;
+         width: 80%;
+        }
 
-.heading h2 {
-  フォントの太さ：通常;
-}
+   .menu > li {/*親階層のみ幅を25%にする*/
+               width: 25%;
+             }
+   /*全てのリスト・リンク共通*/
+   .menu li {
+             list-style: none;
+              position: relative;
+             }
 
-。レッスン {
-  フロート：左;
-  幅：25％;
-}
+   .menu li a { background-color:rgba(192, 192, 192,0.2);
+                 border-right: 1px solid #eee;
+                 border-left: 1px solid #eee;
+                 margin-left: 10px;
+                 color: #fff;
+                 display: block;
+                 height: 2rem;
+                 line-height: 2rem;
+                 text-align: center;
+                 text-decoration: none;
+                 width: 100%;
 
-.lesson-icon {
-  位置：相対;
-}
+             }
 
-.lesson-icon p {
-  位置：絶対;
-  トップ：37％;
-  幅：100％;
-  色：白;
-}
+  .menu li a:hover{background-color:rgba(192, 192, 192,0.6)}
 
-.text-contents {
-  幅：80％;
-  表示：インラインブロック;
-  マージントップ：15px;
-  フォントサイズ：13px;
-  色：＃b3aeb5;
-}
 
-.heading h3 {
-  フォントの太さ：通常;
-}
+             /*子階層以降共通*/
+  .menu li li {
+      height: 0;
+      overflow: hidden;
+      transition: 0s;
+  }
+  .menu li li a {
+      border-top: 1px solid #eee;
+  }
+  .menu li:hover > ul > li {
+      height: 2rem;
+      overflow:visible;
 
-.message-wrapper {
-  border-bottom：1px solid #eee;
-  パディング-下：80px;
-  text-align：center;
-}
-
-。メッセージ {
-  パディング：15px 40px;
-  背景色：＃5dca88;
-  カーソル：ポインタ;
-  ボックスシャドウ：0px 7px＃1a7940;
-}
-
-.message：active {
-  位置：相対;
-  上：7px;
-  ボックスシャドウ：なし;
-}
-
-フッターimg {
-  幅：125px;
-}
-
-フッターp {
-  色：＃b3aeb5;
-  フォントサイズ：12px;
-}
-
-フッター{
-  パディングトップ：30px;
-  パディング-下：20px;
-}
-
-.menu-icon {
-  色：白;
-  フロート：右;
-  フォントサイズ：25px;
-  パディング：21px 0;
-  表示：なし;
-}
-
-。クリア {
-  クリア：左;
-}
-
-@media all and（max-width：1000px）{
-  。レッスン {
-    幅：50％;
-    margin-bottom：50px;
   }
 
-  .lesson-wrapper {
-    高さ：990px​​;
+  /*真ん中*/
+
+  body{width:100%}
+
+
+  .img-wrap {
+    width: 80%;
+    position: relative;
+    margin:100px auto;
+    height: 500px;
   }
 
-  フッター{
-    text-align：center;
-  }
-}
-
-@media all and（max-width：750px）{
-  .top-wrapper h1 {
-    フォントサイズ：32px;
+  .img-wrap img {
+    width:100%;
+    height: 100%;
+    position: absolute;
   }
 
-  .heading h2 {
-    フォントサイズ：20px;
-  }
-}
 
-@media all and（max-width：670px）{
-  .header-right {
-    表示：なし;
-  }
 
-  .menu-icon {
-    表示ブロック;
-  }
 
-  .top-wrapper .btn {
-    幅：100％;
-  }
+  .massage-box{display: flex;
+  width: 100%}
 
-  。ツイッター {
-    マージントップ：10px;
-  }
+  .inbox4{width:10%;
+         }
 
-  .top-wrapper {
-    text-align：左;
-  }
 
-  .top-wrapper h1 {
-    フォントサイズ：24px;
-  }
 
-  .top-wrapper p {
-    フォントサイズ：14px;
+  .me-box{margin-top:80px;
+               width:80%;
+               height:300px;
+               color:white;
+               background-color:rgba(192, 192, 192,0.2);
+             }
+
+  .msg {
+       opacity: 0;
+       transition: all .5s ease;
+
+
+       }
+
+
+  .msg-in {
+   transform: translate(0, 100px);
   }
 
-  。レッスン {
-    幅：100％;
+
+  .msg.show {
+    opacity: 4;
+    transform: none;
+    }
+
+  #mozi-change{height:50px;}
+
+  .visible{visibility: hidden;}
+
+
+  .me-box a{text-align: center;}
+
+
+  .inbox5{width:10%;
+
+            }
+
+  .twitter{width:90%;
+          height:100%;
+          margin-top:100px;
+          display:flex;
+          margin-left: 20px}
+
+  .introduce{width:70%;
+    position:relative;
+  margin-bottom:30px;
+  padding:20px 10px;
+  border:4px double silver;
+  border-radius:16px;
+  background:white;
+  margin-left: 20px;
+  overflow-y:scroll;
+  height:450px}
+
+  .title{margin-top: 20px;}
+
+  .face{width:30%}
+
+  .inbox6{width:30%;
+          }
+
+  .me-box p {text-align: center;}
+
+  .me-box h2{text-align: center;}
+
+
+  .rakket-box{margin-top:30px;
+              text-align: center;}
+
+
+
+  .inbox6{width:30%;
+          }
+
+  .gaiyou{width:100%;
+          display:flex;
+          height:200px;
+          color:silver;
+          margin-top:20px}
+
+  .gaiyou div{margin-left:8px}
+
+  .gaiyou ul{margin-left: 35px;
+            margin-top:10px}
+
+
+  .team{
+        width:33%}
+
+  .plactice-day{
+        width:33%}
+
+  .plactice-place{
+        width: 33%
   }
 
-  .lesson-wrapper {
-    高さ：1700px;
-  }
+  .borer-line{border-bottom:5px solid silver
+                    }
 
-  .message-wrapper .btn {
-    幅：100％;
-  }
-}
+
+  .mail{
+        border:5px solid silver;
+        border-radius: 10px;
+        background-color:rgba(192, 192, 192,0.5);
+        height:70px;
+        width: 50%;
+        margin:60px auto;
+        text-align: center;}
+
+
+  .mail:active{position: relative;
+               top:10px}
+
+  .mail:hover{background-color:rgba(192, 192, 192,0.8);}
+
+  .mail a:visited{color:black;}
+
+  footer{height:150px;
+         display:flex;
+         margin-top: 150px;
+          width:100%;
+          }
+
+
+  .inbox7{width:100%;
+          display:block;
+          text-align: center;
+          color:rgba(192, 192, 192,0.8);
+            }
+
+
+
+  .count{list-style:none}
+
+  .count li{margin-top:5px;
+            color:silver}
+
+
+  #hiduke{margin-top:10px}
+
+
+  .introduce h2{text-align: center;}
